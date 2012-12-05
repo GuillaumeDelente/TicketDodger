@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="gray_text" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="description" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_text" parent="@style/gray_text">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#E6000000</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <style name="blue_button" parent="@style/white_text">
+        <item name="android:background">@drawable/blue_button_selector</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="parking_result">
+        <item name="android:background">@drawable/bg</item>
+    </style>
+
+</resources>

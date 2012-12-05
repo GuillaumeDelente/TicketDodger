@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parking_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkActivity" >
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/section_background"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="YES"
+        android:textColor="#339933"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_textview"
+        style="@style/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="You have 2 hours and 42 minutes remaining" />
+
+    <Button
+        android:id="@+id/remember_button"
+        style="@style/blue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setup_alarm_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/places"
+        android:text="Remember my car\&apos;s location" />
+
+    <Button
+        android:id="@+id/setup_alarm_button"
+        style="@style/blue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/alarm"
+        android:text="Setup an alarm" />
+
+</RelativeLayout>
