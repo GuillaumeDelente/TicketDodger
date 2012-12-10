@@ -1,7 +1,6 @@
 package com.android.ticketdodger;
 
 import java.util.List;
-import java.util.Random;
 
 import android.content.Intent;
 import android.location.Location;
@@ -27,7 +26,7 @@ public class MainActivity extends MapActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		MapView mapView = (MapView) findViewById(R.id.mapview);
-		mapView.setBuiltInZoomControls(true);
+		//mapView.setBuiltInZoomControls(true);
 		MapController mapController = mapView.getController();
 		mapController.setCenter(new GeoPoint((int) (34.073297 * 1E+6),
 				(int) (-118.398202 * 1E+6)));
